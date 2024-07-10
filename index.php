@@ -1,7 +1,7 @@
 <?php         //inicia o php 
 // isso é um comentario
 echo "Hello World ";
-echo"<b> Olá Mundo </b>";    
+echo"<b> Olá Mundo </b>";    // aceitta tags
 
 
 
@@ -14,25 +14,27 @@ define('PI' ,3.14);
 echo PI;            // sempre terminar com ;
 echo $nome;        // sempre coloca cifrao qnd cria e quando usa 
 
-echo "Meu nome é : " . $nome . "<br>";
+echo "Meu nome é : " . $nome . "<br>";     // br quebra de linha   . concatena
 echo "Meu nome é: $nome<br>";
 
 echo strlen($nome);
-// echo "</pre>";
-var_dump($nome);
+// echo "</pre>";            // pre organizar em coluna
+var_dump($nome);          // declara o que está na variável , define o que está nela 
 echo "<br>";
-echo rand(0,10);
+echo rand(0,10);           // minimo e maximo randorizar um numero
 
 echo "<br>";
 $frutas = array('maça', 'banana','manga');
 echo $frutas[0];
 foreach($frutas as $elemento){                   // "as" significa "como"
+    // esse elemento pode ser qualquer palavra
     echo $elemento . "<br>";
 }
-$idades = array("pedro" => 18, "magno"=>40);
+$idades = array("pedro" => 18, "magno"=>40);          // array indexado, 
 echo $idades['magno'] . "<br>";
 foreach($idades as $nome =>$idade){
     echo "$nome tem $idade anos <br>";
+
 }
 
 ?>
